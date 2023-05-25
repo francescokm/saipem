@@ -36,19 +36,9 @@ mysql> CREATE VIEW view_company_2 AS
 Query OK, 0 rows affected (0.00 sec)
 
 <pre>Buat Query Select dari view menampilkan data seperti disamping</pre>
-CREATE VIEW view_all_company AS SELECT x.company_code_1 code_1, x.company_name name_1, 
+<p>CREATE OR REPLACE VIEW view_all_company AS SELECT x.company_code_1 code_1, x.company_name name_1, 
 xx.company_code_2 code_2, xx.company_name name_2 FROM company_1 x, 
-company_2 xx WHERE xx.company_code_1 = x.company_code_1 AND x.company_code_1 = 'SP';
-Query OK, 0 rows affected (0.02 sec)
-
-mysql> select * from view_all_company;
-+--------+--------+--------+------------------+
-| code_1 | name_1 | code_2 | name_2           |
-+--------+--------+--------+------------------+
-| SP     | SAIPEM | PTSI   | SAIPEM INDONESIA |
-| SP     | SAIPEM | SPA    | SAIPEM MILAN     |
-+--------+--------+--------+------------------+
-2 rows in set (0.00 sec)
+company_2 xx WHERE xx.company_code_1 = x.company_code_1 AND x.company_code_1 = 'SP';</p>
 
 <pre>Perbedaan antara Function dan Procedure</pre>
 Perbedaan Functions dan Procedures di DB :
