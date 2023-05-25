@@ -1,6 +1,6 @@
 <h1>Lembar Jawaban Untuk Siapem Indonesia</h1>
 
-=================================================
+<pre>=================================================</pre>
 Buat Query untuk membuat 2 table berikut :
 mysql> CREATE TABLE company_1 (
     -> company_code_1 char(5) NOT NULL,
@@ -16,7 +16,7 @@ mysql> CREATE TABLE company_2 (
     -> CONSTRAINT FK_company_1 FOREIGN KEY(company_code_1) REFERENCES company_1(company_code_1)
     -> );
 Query OK, 0 rows affected (0.04 sec)
-=================================================
+<pre>=================================================</pre>
 
 Buat Query untuk insert ke masing-masing table :
  - company_1
@@ -29,7 +29,7 @@ mysql> INSERT INTO company_2 VALUES('SPA','SP','SAIPEM MILAN'),('PTSI','SP','SAI
 Query OK, 4 rows affected (0.01 sec)
 Records: 4  Duplicates: 0  Warnings: 0
 
-=================================================
+<pre>=================================================</pre>
 
 Buat View untuk menampilkan data company_1 & company_2 :
 mysql> CREATE VIEW view_company_1 AS
@@ -40,7 +40,7 @@ mysql> CREATE VIEW view_company_2 AS
     -> SELECT * FROM company_2;
 Query OK, 0 rows affected (0.00 sec)
 
-=================================================
+<pre>=================================================</pre>
 
 Buat Query Select dari view menampilkan data seperti disamping
 
@@ -58,10 +58,10 @@ mysql> select * from view_all_company;
 +--------+--------+--------+------------------+
 2 rows in set (0.00 sec)
 
-=================================================
+<pre>=================================================</pre>
 
 Perbedaan Functions dan Procedures di DB :
 Function tidak menghasilkan return nilai apapun
 sedangkan procedure bisa menghasilkan return
 
-=================================================
+<pre>=================================================</pre>
