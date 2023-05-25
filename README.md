@@ -1,6 +1,7 @@
 <h1>Lembar Jawaban Untuk Siapem Indonesia</h1>
 <br />
 <pre>Buat Query untuk membuat 2 table berikut :</pre>
+
 - mysql> CREATE TABLE company_1 (
     -> company_code_1 char(5) NOT NULL,
     -> company_name varchar(100) NOT NULL,
@@ -16,6 +17,7 @@
     -> );
 
 <pre>Buat Query untuk insert ke masing-masing table </pre>
+ 
  - company_1
 mysql> INSERT INTO company_1 VALUES('SP','SAIPEM'),('JV','CCS JV');
 
